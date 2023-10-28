@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <h1>Coming Soon...</h1>
+    <a href="./resume.html">Go to Resume</a>
+    <a href="/">Go to Home Page</a>
+    <hr />
+    <!-- / indicates server: here data will send to the server -->
+    <!-- get method = shows the submited data in the url, not encrypted -->
+    <!-- post method = you must have the server that accepts the data, encrypted, use in case of using sensetive information -->
+    <!-- here, path (action) is contact.html -->
+    <form action="/contact.html" method="get" enctype="multipart/form-data">
+      <p>
+        <label for="">First Name:</label>
+        <input type="text" required minlength="3" maxlength="10" name="fName" />
+      </p>
+      <p>
+        <label for="">Last Name:</label>
+        <input type="text" required minlength="3" maxlength="10" name="lName" />
+      </p>
+      <p>
+        <label for="">Phone Number:</label>
+        <input type="number" />
+      </p>
+      <p>
+        <label for="">Date of Birth:</label>
+        <input type="date" />
+        <input type="time" />
+      </p>
+      <p>
+        <label for="">Gender:</label>
+        <input type="radio" name="gender" id="mId" />
+        <label for="mId">M</label>
+
+        <input type="radio" name="gender" id="fId" />
+        <label for="fId">F</label>
+
+        <input type="radio" name="gender" id="naId" />
+        <label for="naId">NA</label>
+      </p>
+      <p>
+        <label for="">Age?</label>
+        <input type="number" min="18" max="65" />
+      </p>
+      <p>
+        <label for="">Email:</label>
+        <input type="email" />
+      </p>
+      <p>
+        <label for="">Password:</label>
+        <input type="password" />
+      </p>
+
+      <p>
+        <label for="">Linked:</label>
+        <input type="url" />
+      </p>
+      <p>
+        <label for="">Message:</label>
+        <textarea name="" id="" cols="30" rows="5"></textarea>
+      </p>
+      <!-- make multiple options select -->
+      <p>
+        <label for="">Fruits</label>
+        <select name="" id="" multiple>
+          <option value="">--select one--</option>
+          <option value="">Banana</option>
+          <option value="">Apple</option>
+          <option value="">Pear</option>
+        </select>
+      </p>
+      <p>
+        <input type="checkbox" name="" id="" required />
+        <label for="">I agree T&C</label>
+      </p>
+      <!-- define the type of the file with accept -->
+      <!-- Allow to upload multiple files -->
+      <p>
+        <input type="file" name="" id="" accept="image/*" multiple />
+      </p>
+      <p>
+        <!-- <input type="submit" /> -->
+        <button>Submit</button>
+      </p>
+    </form>
+  </body>
+</html>

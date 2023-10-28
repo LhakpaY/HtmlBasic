@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My First Bootcamp Webpage</title>
+  </head>
+  <body>
+    <!-- Internal Navigation -->
+    <a href="./contact.html">Go to Contact</a>
+    <br />
+    Hello World!
+    <hr />
+    <!-- To Comment: command + / -->
+    <!-- Shift + Option + down arrow to copy paste -->
+    <!-- Control + D to select same word with in the line -->
+    <!-- Headings 1 - 6 -->
+    <h1>This is a H1</h1>
+    <h2>This is a H2</h2>
+    <h3>This is a H3</h3>
+    <h4>This is a H4</h4>
+    <h5>This is a H5</h5>
+    <h6>This is a H6</h6>
+    <hr />
+
+    <!-- Paragraph -->
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus aliquam
+      voluptatem ducimus vero, dolorum quas, nesciunt est consequuntur ea velit,
+      laborum magnam molestiae! Exercitationem id, et harum voluptatum dolor
+      velit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, minus.
+    </p>
+    <hr />
+
+    <!-- div -->
+    <div>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus aliquam
+      voluptatem ducimus vero, dolorum quas, nesciunt est consequuntur ea velit,
+      laborum magnam molestiae! Exercitationem id, et harum voluptatum dolor
+      velit.
+    </div>
+    <div>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, minus.
+    </div>
+    <hr />
+
+    <!-- Inline elements -->
+    <span>Hi there!</span>
+    <span>this is Lhakpa.</span>
+    <span>How's going?</span>
+    <hr />
+
+    <!-- Nested elements -->
+    <div>
+      <h2>About me</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+        incidunt exercitationem ad. Totam cum fugit assumenda distinctio labore
+        quaerat aut non voluptatem. Ut molestiae itaque est, unde quam ipsam
+        velit?
+      </p>
+      <hr />
+    </div>
+
+    <!-- Images (Inline element) -->
+    <!-- 1. Absoulate Path -->
+    <img
+      src="https://res.cloudinary.com/practicaldev/image/fetch/s--7sJHQFHp--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/s702od73320vtz3u4yfw.jpg"
+      alt=""
+      height="300px"
+    />
+    <hr />
+    <!-- 2. Relative Path -->
+    <!-- Single . = same folder -->
+    <!-- Double .. = outside folder -->
+    <img src="./Code.jpeg" width="200px" alt="" />
+    <hr />
+
+    <!-- Links -->
+    <!-- When clicked on link, it opens in a new tab with the help of target -->
+    <a href="http://google.com" target="_blank">Google</a>
+    <hr />
+
+    <!-- Image as link -->
+    <a
+      href="https://res.cloudinary.com/practicaldev/image/fetch/s--7sJHQFHp--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/s702od73320vtz3u4yfw.jpg"
+      target="_blank"
+    >
+      <img
+        src="https://res.cloudinary.com/practicaldev/image/fetch/s--7sJHQFHp--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/s702od73320vtz3u4yfw.jpg"
+        alt=""
+        height="50px"
+      />
+    </a>
+    <hr />
+
+    <!-- Semantic elements -->
+    <section>
+      <h2>Latest Articles</h2>
+      <hr />
+      <article>
+        <h4>1. How to learn faster?</h4>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam
+          sequi amet, praesentium omnis placeat sapiente voluptates,
+          voluptatibus maiores ducimus quam aspernatur quia odit accusantium
+          accusamus nostrum nihil suscipit hic reiciendis.
+        </p>
+      </article>
+      <hr />
+      <article>
+        <h4>2. How to code faster?</h4>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam
+          sequi amet, praesentium omnis placeat sapiente voluptates,
+          voluptatibus maiores ducimus quam aspernatur quia odit accusantium
+          accusamus nostrum nihil suscipit hic reiciendis.
+        </p>
+      </article>
+    </section>
+    <hr />
+
+    <!-- Data Management -->
+    <!-- 1List -->
+    <!-- 1.1 Ordered list -->
+    <!-- Types: 1, A, a, I, i -->
+    <h4>Topics to learn</h4>
+    <ol type="i">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+    </ol>
+
+    <!-- 1.2 Unordered list -->
+    <!-- Types: disc, circle, square -->
+    <h4>CSS to learn</h4>
+    <ul type="">
+      <li>Flex Box</li>
+      <li>Grid system</li>
+      <li>Animations</li>
+      <li>Units</li>
+    </ul>
+    <hr />
+
+    <!-- Nested list -->
+    <h4>Topics to learn</h4>
+    <ol type="i">
+      <li>HTML</li>
+      <li>
+        CSS
+        <ul type="">
+          <li>Flex Box</li>
+          <li>Grid system</li>
+          <li>Animations</li>
+          <li>Units</li>
+        </ul>
+      </li>
+      <li>JavaScript</li>
+      <li>React</li>
+    </ol>
+    <hr />
+
+    <!-- 2. Table -->
+    <table border="1">
+      <h3>Table</h3>
+      <thead>
+        <th>#</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Address</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1.</td>
+          <td>Lhakpa</td>
+          <td>Sherpa</td>
+          <td>Campsie</td>
+        </tr>
+        <!-- tr*td*4 -->
+        <tr>
+          <td>2.</td>
+          <td>Pream</td>
+          <td>Acharay</td>
+          <td>Rockdale</td>
+        </tr>
+
+        <!-- Merge cells using colspan -->
+        <tr>
+          <td>3.</td>
+          <td colspan="2">Dependra</td>
+          <td>Sydney</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+  </body>
+  <br />
+
+  <footer>&copy;👩‍💻Copy right all reserved! Made with 🫶</footer>
+</html>
